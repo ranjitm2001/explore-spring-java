@@ -1,7 +1,9 @@
 package com.example.explorespring.service;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
-@Service
-public class UserService {
+import com.example.explorespring.dto.UserDto;
+
+public interface UserService {
+    List<UserDto> getAllUsers();
 }
